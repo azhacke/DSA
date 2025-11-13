@@ -5,7 +5,7 @@ void printSubArrays(int arr[], int n)
 {
     for (int i = 0; i < n; i++)
     {
-        for (int j = i; j < n; j++)
+        for (int j =  i; j < n; j++)
         {
             // print subarray from i to j
             for (int k = i; k <= j; k++)

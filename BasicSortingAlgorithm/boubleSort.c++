@@ -5,15 +5,19 @@ int boubleSort(int arr[], int n)
 {
     for (int i = 0; i < n; i++)
     {
-        for (int j = 0; j < n - 1 - i; j++)
-        //it works even j < n
+        bool isSwap = false;
         {
-            if (arr[j] > arr[j + 1])
-            {
-                int temp = arr[j];
-                arr[j] = arr[j + 1];
-                arr[j + 1] = temp;
-            }
+            for (int j = 0; j < n - 1 - i; j++)
+                // it works even j < n
+                if (arr[j] > arr[j + 1])
+                {
+                    swap(arr[i], arr[i + 1]);
+                    isSwap = true;
+                }
+        }
+        if (!isSwap)
+        {
+            break;
         }
     }
     cout << "sorted Array : ";
@@ -37,4 +41,4 @@ int main()
     n = sizeof(arr) / sizeof(int);
     // cout << n;
     boubleSort(arr, n);
-}
+} // time complexity

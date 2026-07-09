@@ -1,9 +1,0 @@
-{
-    "files.associations": {
-        "*.ejs": "html",
-        "ostream": "cpp",
-        "algorithm": "cpp"
-    },
-    "C_Cpp.errorSquiggles": "disabled",
-    "debug.disassemblyView.showSourceCode": false
-}
